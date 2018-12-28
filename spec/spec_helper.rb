@@ -7,6 +7,7 @@ require 'faraday_middleware'
 require 'faker'
 require 'bunny'
 require './spec/support/event_consuming_helper'
+require 'faraday-cookie_jar'
 
 RSpec.configure do |config|
   TOOLBOX_HOST = ENV.fetch('TOOLBOX_HOST', 'http://www.microkube.com')
